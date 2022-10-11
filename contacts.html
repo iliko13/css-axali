@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Contacts</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./src/logo13.png" alt="logo">
+        <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="https://mortalkombat.com">News</a>
+            <a href="./contacts.html">Registration</a>
+        </div>
+    </header>
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h1>Registration Form</h1>
+            <h3>Fill the form below and press the submit button!</h3>
+            <div class="row">
+                <!-- FIRST COLUMN -->
+                <div class="column">
+                    <fieldset>
+                        <input type="text" placeholder="Full Name" name="name" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Father Name" name="fname" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Your Email" name="email" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Date of Birth" name="date" onfocus="(this.type = 'date')" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Phone Number" name="phone" id="phone" required autofocus>
+                    </fieldset>
+                </div>
+                <!-- secong column -->
+                <div class="column">
+                    <fieldset>
+                        <p>what is your gender?</p>
+                        <div class="radio">
+                            <input type="radio" id="male"
+                            name="gender" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="male"
+                            name="gender" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="idCard">Enter your ID Card in given formate</label>
+                        <div class="idCard">
+                            <input type="text" name="idCard" pattern="[0-9]{5}" placeholder="#####" maxlength="5">
+                            <input type="text" name="idCard" pattern="[0-9]{7}" placeholder="#######" maxlength="7">
+                            <input type="text" name="idCard" pattern="[0-9]{1}" placeholder="#" maxlength="1">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <p>Upload File</p>
+                        <input type="file" id="file" required>
+                    </fieldset>
+                </div>
+            </div>
+            <!-- submit button -->
+            <fieldset>
+                <button type="submit" id="button">Submit Now</button>
+            </fieldset>
+        </form>
+    </div>
+    <!-- javascript -->
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+         separateDialCode: true
+         });
+      </script>
+      <footer>
+        <span>copyright &copy; 2022</span>
+        <img class="logo" src="./src/logo13.png" alt="logo">
+        <div class="footer_icons">
+            <a href="#">
+                <img src="./src/facebook.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="./src/Instagram.png" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="./src/linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

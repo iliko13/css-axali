@@ -1,0 +1,208 @@
+/* import google font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+header, 
+footer { 
+    padding: 20px 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer span {
+    color: white;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+.logo {
+    width: 100px;
+    height: 80px;
+}
+@media (max-width: 768px){
+    header,
+    footer,
+    section{
+        padding: 20px 16px
+    }
+    
+}
+body {
+    font-family: 'Open Sans', sans-serif, helvetica, Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    /* body background image */
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.541), rgba(204, 0, 255, 0.637)), url(./poni.webp);
+    background-attachment: fixed;
+    background-size: <span id="IL_AD10" class="IL_AD">cover</span>;
+     
+   }
+   .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+   }
+   #contact {
+    background-color: rgba(220, 255, 66, 0.7);
+    padding: 20px;
+    margin: 50px 0;
+   }
+   #contact input, button {
+    font: 400 15px 'Open Sans', sans-serif, helvetica, Arial;
+   }
+   #contact h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+   }
+   #contact h3 {
+    margin: 5px 0px 15px;
+    text-align: center;
+   }
+   .row {
+    display: flex;
+    width: 100% !important;
+    padding: 20px 0px;
+   }
+   .row .column {
+    margin: 0px 20px;
+    width: 50%;
+   }
+   fieldset {
+    border: medium none !important;
+    margin:  0 0 10px;
+    min-width: 100%;
+    width: 100%;
+   }
+   #contact input {
+    width: 100%;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+   }
+   input[type = "radio"] {
+    width: 10% !important;
+   }
+   #contact .row .radio {
+    border: 1px solid rgb(150, 150, 150);
+    background-color: white;
+    margin: 7px 0 10px;
+    padding: 5px;
+   }
+   #contact .row .idCard{
+    display: flex;
+    height: 45px !important;
+    margin: 5px 0;
+   }
+   #contact .row .idCard :first-child {
+    width: 80px;
+   }
+   #contact .row .idCard :last-child {
+    width: 40px;
+   }
+   #contact .row #phone {
+    max-width: 100% !important;
+    padding-right: 80px;
+   }
+   #contact input:hover {
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid rgb(68, 68, 68);
+   }
+   #contact button {
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    margin: 0 0 5px 40%;
+    padding: 10px;
+    font-size: 17px;
+    width: 150px;
+   }
+    
+   #contact button:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+   }
+    
+   #contact input:focus {
+    outline: 0;
+    border: 1px solid red;
+   }
+    
+   /* mobile responsive mode */
+   @media screen and (max-width: 768px)  {
+    .row {
+     flex-direction: column;
+    }
+    .row .column {
+     width: 90% !important;
+    }
+    #contact .row #phone {
+    padding-right: 180px;
+   }
+   }
